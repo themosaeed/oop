@@ -9,7 +9,7 @@ public class HomePage {
 
     String productName = "Sauce Labs Bolt T-Shirt";
     //elements
-    By headerArea = By.className("app_logo");
+    public By headerArea = By.className("app_logo");
     By productLink = By.xpath("//div[text()=\""+productName+"\"]");
 
     public void openProduct(){

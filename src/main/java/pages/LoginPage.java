@@ -7,12 +7,15 @@ public class LoginPage {
 
     WebDriver driver;
 
+    public LoginPage(WebDriver driver){
+        this.driver = driver;
+    }
 
     //elements
     By usernameField = By.id("user-name");
     By passwordField = By.id("password");
     By loginButton = By.id("login-button");
-    By errorButton = By.className("error-button");
+    public By errorButton = By.className("error-button");
 
 
     //actions
